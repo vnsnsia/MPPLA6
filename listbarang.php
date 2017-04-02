@@ -2,26 +2,28 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>TCARI-Cari yang hilang yuk</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/shop-homepage.css" rel="stylesheet">
-    
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -30,7 +32,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="index.php">
                     <i class="fa fa-play-circle"></i> <span class="light">TCARI
                 </a>
             </div>
@@ -43,16 +45,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Cari barang</a>
+                        <a class="page-scroll" href="#about">Cari barang hilang</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Login</a>
+                        <a class="page-scroll" href="#contact">Login</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Post Barang</a>
+                        <a class="page-scroll" href="#contact">Tolong temukan</a>
                     </li>
                 </ul>
             </div>
@@ -61,171 +63,153 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <h1>LIST BARANG HILANG</h1>
         <div class="row">
-
             <div class="col-md-3">
-                <p class="lead">Shop Name</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
+                <p class="lead">Masukkan keyword</p>
+                <div class="list-group">    
+                    <div class="search">
+                        <input type="text" class="form-control" maxlength="30" placeholder="Search" />
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-sm">Cari</button>
+                    </div>
                 </div>
             </div>
-
             <div class="col-md-9">
-
                 <div class="row">
-
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
+                                <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <h4><a href="#">Barang 1</a></h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <a href="detail.php" class="btn btn-primary">Lihat</a>
+                                    <a href="#" class="btn btn-default">Hubungi</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
+                                <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <h4><a href="#">Barang 2</a></h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <a href="detail.php" class="btn btn-primary">Lihat</a>
+                                    <a href="#" class="btn btn-default">Hubungi</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
+                                <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <h4><a href="#">Barang 3</a></h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <a href="detail.php" class="btn btn-primary">Lihat</a>
+                                    <a href="#" class="btn btn-default">Hubungi</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
+                                <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <h4><a href="#">Barang 4</a></h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <a href="detail.php" class="btn btn-primary">Lihat</a>
+                                    <a href="#" class="btn btn-default">Hubungi</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
+                                <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <h4><a href="#">Barang 5</a></h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <a href="detail.php" class="btn btn-primary">Lihat</a>
+                                    <a href="#" class="btn btn-default">Hubungi</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4><a href="#">Like this template?</a>
-                        </h4>
-                        <p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
-                        <a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <!-- <h4 class="pull-right">$24.99</h4> -->
+                                <h4><a href="#">Barang 6</a></h4>
+                                <p>
+                                    <a href="detail.php" class="btn btn-primary">Lihat</a>
+                                    <a href="#" class="btn btn-default">Hubungi</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#">&laquo;</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
+    </section>
 
-    </div>
-    <!-- /.container -->
-
-    <div class="container">
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>TCARI 2017</p>
+        </div>
+    </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
 
 </body>
 

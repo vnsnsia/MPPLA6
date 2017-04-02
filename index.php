@@ -4,7 +4,7 @@
 <style>
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -20,7 +20,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
 }
 
 button:hover {
@@ -174,34 +174,29 @@ span.psw {
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Cari barang</a>
+                        <a class="page-scroll" href="#about">Cari Barang Hilang</a>
                     </li>
                     <li>
                         <a class="page-scroll" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="pengguna/index.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
     </div>
 
     <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" class="form-control" placeholder="Enter Username" name="uname" required>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
         
       <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
+      
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+    
   </form>
 </div>
 
@@ -219,10 +214,10 @@ window.onclick = function(event) {
 
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">About</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Post Barang</a>
+                        <a class="page-scroll" href="listbarang.php">Tolong Temukan</a>
                     </li>
                 </ul>
             </div>
@@ -270,53 +265,50 @@ window.onclick = function(event) {
         <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/350x350" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="#">Barang 1</a>
                 </h3>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/350x350" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="#">Barang 2</a>
                 </h3>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/350x350" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="#">Barang 3</a>
                 </h3>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
+       		<div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/350x350" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="#">Barang 4</a>s
                 </h3>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/350x350" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="#">Barang 5</a>
                 </h3>
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/350x350" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
                 </a>
                 <h3>
-                    <a href="#">Project Name</a>
+                    <a href="#">Barang 6</a>
                 </h3>
             </div>
         </div>
@@ -331,50 +323,23 @@ window.onclick = function(event) {
         	</div>
         </div>
     </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Hubungi Kami</h2>
+                <h3>WA/SMS/TELP : 089872829292</h3>
+                <p><a href="mailto:tcari.online@gmail.com">tcari.online@gmail.com</a>
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
-
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>TCARI 2017</p>
         </div>
     </footer>
 
