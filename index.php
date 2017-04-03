@@ -181,7 +181,7 @@ span.psw {
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="pengguna/index.php">
+  <form class="modal-content animate" action="pengguna/index.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
@@ -192,7 +192,7 @@ span.psw {
 
       <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" name="submit">Login</button>
       
     </div>
 
